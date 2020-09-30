@@ -26,7 +26,7 @@ app.post('/oauth',(req,res) => {
     .post('https://github.com/login/oauth/access_token')
     .send({
         client_id:'841775ffdee13afd7f4f',
-        client_secret:'6af79224667933d50c3daaff3ac610f903305df6',
+        client_secret:'',
         code:req.body.code
     })
     .set('Accept','application/json')
